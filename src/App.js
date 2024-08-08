@@ -1,4 +1,3 @@
-import {  Routes, Route} from 'react-router-dom'
 
 import Home from './home';
 import Resume from './resume'
@@ -12,7 +11,7 @@ import Portfolio from './portfolio';
 import Navbars from './component/navbar/navbars';
 
 import Footer from './Footer';
-import { useState } from 'react';
+
 //import '//App.css'
 //import { useEffect, useMemo, useState } from "react";
 //import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -55,6 +54,7 @@ const  App =() => {
 <Portfolio/>
 <Testimonia/>
 <Contact/>
+<Skill/>
 <Images/>
 {/**
 
