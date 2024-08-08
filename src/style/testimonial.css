@@ -1,0 +1,130 @@
+.container, .container__testimonial{
+    width:50%;
+    margin-bottom:4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.clients__avatar{
+      width: 300px;
+     margin:0px auto 1rem;
+     overflow: hidden;
+     border-radius: 50%;
+     height: 300px;
+  
+        
+}
+.client__name{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    color:#000;
+}
+.review{
+    color:#000;
+
+font-size:16px;
+font-weight:400;
+
+}
+ 
+.swiper-testimonials{
+background:var(--yellow-theme-main-color);
+text-align:center;  
+border-radius:2rem;
+user-select:none;
+padding:2rem; 
+margin-bottom:2rem; 
+margin-right:auto;
+margin-left: auto;
+width:100%;
+
+}
+.review{
+    color:var(--yellow-theme-sub-text-color);
+    font-weight:500;
+    display: block;
+    font-size: 18px;
+    width:100%;
+    
+     
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
+     background:var(--yellow-theme-main-color);
+     margin-top:30px;
+     
+}
+.avatar{
+    width:300px;
+    height:300px;
+}
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--yellow-theme-sub-text-color);
+}
+.testimonial > h5{
+    font-size: 20px;
+    margin-bottom:20px;
+    text-align: center;
+
+    color:var(--yellow-theme-sub-text-color)
+    
+}
+
+
+@media screen and (max-width:1024px){
+    .container .testimonial__container{
+       width:60%;
+       
+    }
+    
+}
+@media screen and (max-width:600px){
+    .container .testimonial__container{
+        width:var(--container-width-sm);
+        margin-top:300px;
+    }
+    .client__review{
+        width:var(--container-width-sm);
+        
+    }
+    .avatar{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+    }
+    .testimonials{
+        flex-wrap: wrap;
+    }
+    .swiper-testimonials{
+        width: 100%;
+        
+        padding: 20px;
+        overflow: hidden;
+       
+    }
+    .clients__avatar{
+        width: 200px;
+       margin:0px auto 1rem;
+       overflow: hidden;
+       border-radius: 100%;
+       height: 200px;
+    
+          
+  }
+  
+    .review{
+
+line-height: 26px;
+    }
+    .client__name{
+        font-weight: 500;
+        font-size: 18px;
+        text-transform: capitalize;
+    }
+}
+ 

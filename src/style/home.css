@@ -1,0 +1,110 @@
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height:100%;
+}
+.home__text-wrapper{
+
+    display: flex;
+     
+    justify-content: center;
+}
+#btn__contact{
+    margin-left: 200px;
+    padding: 10px 60px;
+    cursor: pointer;
+    font-size: 2rem;
+    border:1px solid (--yellow-theme-background-color);
+    border-radius: 10px 0 10px 0;
+
+    font-weight: 500;
+   color:yellow;
+     
+    
+    
+}
+#btn__contact:hover{
+    color:#000000;
+    background-color: #ffff;
+}
+h1{
+color:var(--yellow-theme-main-color);
+margin:0;
+font-size: 8rem;
+font-weight: 500;
+line-height: 10rem;
+position: relative;
+overflow: hidden;
+white-space: nowrap;
+animation: typing 2.5s steps(20, end);
+
+}
+.btn-contact__me{
+    margin-top:30px;
+}
+button{
+    padding: 10px 60px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px 0 10px 0;
+    background:transparent;
+    font-weight: 500;
+    color: var(--yellow-theme-main-color);
+}
+button:hover{
+   color:#000000;
+    background-color: var(--yellow-theme-main-color);
+}
+@media only screen and (max-width:550px){
+    .home__text-wrapper h1{
+        font-size: 3rem;
+        line-height: 5rem;
+
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:769px){
+    .home__text-wrapper h1{
+        font-size: 3rem;
+        line-height: 6rem;
+       
+       
+       
+    }
+    #btn__contact{
+        margin-left: 100px;
+        background-color:#000000;
+        color:var(--yellow-theme-sub-text-color);
+        padding:15px;
+        font-size: 20px;
+        
+    }
+}
+    
+
+@media only screen and (min-width:769px) and (max-width:990px){
+    .home__text-wrapper h1{
+        font-size: 6rem;
+        line-height: 8rem;
+        margin-top:400px;
+       
+    }
+    #btn__contact{
+        margin-left: 200px;
+        width: 200px;
+        background-color: red;
+    }
+}
+
+@keyframes  typing{
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+    
+}

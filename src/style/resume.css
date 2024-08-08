@@ -1,0 +1,105 @@
+.resume{
+    height:100%;
+    
+}
+.timeline{
+    display:flex;
+    width: 100%;
+    
+    margin:10px;}
+    .timeline > .timeline__experience, .timeline__education{
+        width:40%;
+         gap:3rem;
+         margin:0 40px 0 40px;
+         justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .timeline__experience__header-text{
+        display: inline-block;
+        color:var(--yellow-theme-sub-text-color);
+        font-size:22px;
+        font-weight:700;
+        text-transform: uppercase;
+        border-bottom:1px solid var(--yellow-theme-main-color);
+        padding:5px 10px;
+        margin-bottom:15px;
+        position:relative;
+          letter-spacing: 0.5px;
+
+      }
+      
+      .timeline__experience__header-text::before, .timeline__experience__header-text::after{
+        position:absolute;
+        content: "";
+        width:2px;
+        height:5px;
+        background-color:var(--yellow-theme-main-color);
+        bottom:-1px;
+      }
+      .timeline__experience__header-text::before{
+        left: 0;
+      }
+      .timeline__experience__header-text::after{
+   right:0;
+      }
+      .vertical-timeline-element{
+        padding:0px 0px 30px 0px;
+        .vertical-timeline-element:last-child{
+            padding-bottom:0px;
+        }
+      }
+        .vertical-timeline-element-title-wrapper{
+            display: flex;
+            flex-direction: column;
+            
+
+            h3, h4{
+                font-size: 16px;
+                text-align: justify;
+            }
+            h4{
+            
+                margin-top:5px;
+                line-height: 30px;
+
+            }
+            p{
+                font-size: 18px;
+            }
+        }
+        .vertical-timeline-element-wrapper-description{
+            font-size: 10px;
+        }
+        .vertical-timeline-element-content{
+            box-shadow: none;
+        }
+        .vertical-timeline-element-content-arrow{
+            display:none;
+        }
+        .vertical-timeline-element-date{
+            opacity:1;
+            color:var(--yellow-theme-sub-color);
+            font-size:20px;
+            font-weight: 500;
+            
+        }
+
+        @media only screen and (max-width:760px){
+            .timeline{flex-direction: column;
+        }
+        .resume{
+            margin-top:20px;
+        }
+        .timeline > .timeline__experience, .timeline__education {
+        width: 80%;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        margin-left:-10px;
+    }
+
+    }
+
+

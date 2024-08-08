@@ -1,0 +1,109 @@
+.contact__content{
+    padding:20px;
+    .headers__text{
+        color:var(--yellow-theme-sub-text-color);
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 2rem;
+        letter-spacing: 0.5px;
+        position: relative;
+        text-transform: uppercase;
+        padding:5px 10px;
+      
+        margin-bottom:15px;
+       
+        border-bottom:2px solid var(--yellow-theme-main-color);
+        
+    }
+    .headers__text::before,
+        .headers__text::after{
+        position: absolute;
+        content:" ";
+        width:2px;
+        height:5px;
+        background-color:var(--yellow-theme-main-color);
+       
+        bottom:-1px;
+         }
+         
+     .headers__text::before{
+        left:0;
+    }
+
+    .headers__text::after{
+        right:0;
+    }
+    .contact__content__form{
+        margin-top:30px;
+    }
+    .contact__content__form__control{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:40px;
+        margin-bottom:30px;
+        
+        
+        }
+        .inputName, .inputEmail,
+        .descriptionName{
+            width: 100%;
+            border:2px solid var(--yellow-theme-main-color);
+            padding:16px 12px;
+            transition: all 0.5s ease;
+            position: relative;
+            background-color: transparent;
+            color:var(--yellow-theme-sub-text-color);
+        } 
+        .nameLabel,
+        .emailLabel,
+        .descriptionLabel{
+            font-weight:500;
+            position: absolute;
+            top: 12px;
+            left:12px;
+            transition: all 0.2s ease;
+            color:var(--yellow-theme-sub-text-color);
+            font-size:16px;
+        }
+        
+        .inputName:focus, .inputEmail:focus,
+        .descriptionName:focus{
+            outline:none;
+        }
+        .inputName:focus + .nameLabel,
+        .inputName:valid + .nameLabel,
+        .inputEmail:focus + .emailLabel,
+        .inputEmail:valid + .emailLabel,
+        .descriptionName:focus + .descriptionLabel,
+        .descriptionLabel:valid + .decriptionLabel
+    {
+        font-size:18px;
+        top:-25px;
+        left:0px;
+    }
+
+    }
+
+    .nameWrapper, .emailWrapper, .descriptionWrapper{
+        position: relative;
+
+}
+   
+
+@media only screen and (max-width:760px){
+    .contact__content__form > .contact__content__form__control{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact{
+        margin-top:20px;
+    }
+   }
+
+
+
+    
+
+
+    
+    

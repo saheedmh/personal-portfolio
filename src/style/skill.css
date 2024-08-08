@@ -1,0 +1,67 @@
+.skill > .skill__content__wrapper{
+    display: flex;
+    gap:20px;
+    padding:20px;
+    .skill__content__wrapper{
+        flex:1;
+        flex-direction: column;
+        align-items: center;
+       
+       
+    }
+    .skill__content__header{
+        display: inline-block;
+        color:var(--yellow-theme-main-color);
+        font-size:22px;
+        font-weight:700;
+        text-transform: uppercase;
+        border-bottom:1px solid var(--yellow-theme-main-color);
+        padding:5px 10px;
+        margin-bottom:15px;
+        position:relative;
+          letter-spacing: 0.5px;
+
+      }
+      .skill__content__header::before, .skill__content__header::after{
+        position:absolute;
+        content: "";
+        width:2px;
+        height:5px;
+        background-color:var(--yellow-theme-main-color);
+        bottom:-1px;
+      }
+      .skill__content__header::before{
+        left: 0;
+      }
+      .skill__content__header::after{
+   right:0;
+      }
+    }
+      div
+      {
+        width:100%;
+      }
+      .progressbar__wrapper{
+        padding:50px 0px 0px 0px;
+      p{
+        font-size:1.6rem;
+        margin:0 0 10px;
+        text-transform: uppercase;
+        color:var(--yellow-theme-sub-text-color);
+        
+      }
+}
+@media only screen and (max-width:768px){
+    .skill > .skill__content__wrapper{
+        flex-direction: column;
+        width: 90%;
+         
+    } 
+    .skill{
+      margin-top:50px;
+    }  
+    .progressbar__wrapper{
+        margin-bottom:20px;
+    }
+} 
+      
