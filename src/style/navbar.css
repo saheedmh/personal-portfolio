@@ -13,9 +13,10 @@
 }
 .navbar__container__menu{
     display: flex;
-    gap:1rem;
+    gap:0.6rem;
     text-align: center;
     list-style: none;
+    margin-top:1.4rem;
     left:-110%;
 }
  .navbar__container__menu__item{
@@ -103,4 +104,16 @@
     display: block;
     cursor:pointer;
 }
+}
+
+@media only  screen and (max-width:640px) {
+   .navbar__container__menu__links{
+    cursor: pointer;
+   } 
+}
+@media only screen and (min-width:320px) and (max-width:640px){
+    .navbar__container__menu__link{
+        margin-right: 30px;
+                width: 300px;
+    }
 }

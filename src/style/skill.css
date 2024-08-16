@@ -2,6 +2,7 @@
     display: flex;
     gap:20px;
     padding:20px;
+  }
     .skill__content__wrapper{
         flex:1;
         flex-direction: column;
@@ -19,7 +20,7 @@
         padding:5px 10px;
         margin-bottom:15px;
         position:relative;
-          letter-spacing: 0.5px;
+        letter-spacing: 0.5px;
 
       }
       .skill__content__header::before, .skill__content__header::after{
@@ -36,7 +37,7 @@
       .skill__content__header::after{
    right:0;
       }
-    }
+    
       div
       {
         width:100%;
@@ -55,13 +56,20 @@
     .skill > .skill__content__wrapper{
         flex-direction: column;
         width: 90%;
-         
+        margin-left:50px; 
     } 
     .skill{
       margin-top:50px;
+      
     }  
     .progressbar__wrapper{
         margin-bottom:20px;
     }
 } 
+@media only screen and (min-width:375px) and (max-width:640px){
+  .skill{
+    margin-left: 26px;
+    
+  }
+}
       

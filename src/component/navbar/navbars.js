@@ -63,7 +63,8 @@ const Navbars = () => {
         <div className='navbar__container'>
 
         <Link to={'/'}>
-<h2><a href="a" className='navbar__logo' style={{color:'var(--yellow-theme-main-color)'}}>SaheedTech</a>
+<h2>
+<a href="a" className='navbar__logo' style={{color:'var(--yellow-theme-main-color)', textDecoration:'none'}}>SaheedTech</a>
 </h2>
         </Link>
 
@@ -72,11 +73,10 @@ const Navbars = () => {
         <ul className={`navbar__container__menu ${toggleIcon ? 'active' : ""}`} style={{color:"white"}}>
         <li className='navbar__container__menu__item'><a href="#" className='navbar__container__menu__links'>Home</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#about">About</a></li>
-<li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#resume">Experience</a></li>
-
+<li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#resume">Resume</a></li>
+<li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#skill">Experience</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#portfolio">Portfolio</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#testimonial">Testmonial</a></li>
-
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#contact">Contact</a></li>
 
       {/**

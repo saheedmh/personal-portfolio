@@ -16,6 +16,7 @@ const Resume = () => {
       headerText="resume"
       Icon={<BsInfoCircleFill size={40}/>}
     />
+    <div className="timeline">
 <div className="timeline__education">
         <h3 className='timeline__experience__header-text'>education</h3>
         <VerticalTimeline 
@@ -56,7 +57,7 @@ const Resume = () => {
 
         </VerticalTimeline>
       </div>
-
+</div>
 
     <div className="timeline">
       <div className="timeline__experience">

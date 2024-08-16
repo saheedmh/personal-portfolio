@@ -4,20 +4,25 @@
     align-items: center;
     position: relative;
     flex-direction: column;
-    height:100%;
+    
 }
 .home__text-wrapper{
 
     display: flex;
-     
-    justify-content: center;
+     gap:5px;
+    justify-content: space-around;
+    margin-top:15px;
+    
+}
+.home__text-wrapper > img{
+    border-radius: 25% 0 25% 0;
 }
 #btn__contact{
     margin-left: 200px;
     padding: 10px 60px;
     cursor: pointer;
     font-size: 2rem;
-    border:1px solid (--yellow-theme-background-color);
+    border:1px solid var(--yellow-theme-background-color);
     border-radius: 10px 0 10px 0;
 
     font-weight: 500;
@@ -30,12 +35,12 @@
     color:#000000;
     background-color: #ffff;
 }
-h1{
+.home__text-wrapper > h1{
 color:var(--yellow-theme-main-color);
 margin:0;
-font-size: 8rem;
+font-size: 4rem;
 font-weight: 500;
-line-height: 10rem;
+line-height: 5rem;
 position: relative;
 overflow: hidden;
 white-space: nowrap;
@@ -58,46 +63,6 @@ button:hover{
    color:#000000;
     background-color: var(--yellow-theme-main-color);
 }
-@media only screen and (max-width:550px){
-    .home__text-wrapper h1{
-        font-size: 3rem;
-        line-height: 5rem;
-
-    }
-}
-
-@media only screen and (min-width:400px) and (max-width:769px){
-    .home__text-wrapper h1{
-        font-size: 3rem;
-        line-height: 6rem;
-       
-       
-       
-    }
-    #btn__contact{
-        margin-left: 100px;
-        background-color:#000000;
-        color:var(--yellow-theme-sub-text-color);
-        padding:15px;
-        font-size: 20px;
-        
-    }
-}
-    
-
-@media only screen and (min-width:769px) and (max-width:990px){
-    .home__text-wrapper h1{
-        font-size: 6rem;
-        line-height: 8rem;
-        margin-top:400px;
-       
-    }
-    #btn__contact{
-        margin-left: 200px;
-        width: 200px;
-        background-color: red;
-    }
-}
 
 @keyframes  typing{
     from {
@@ -107,4 +72,52 @@ button:hover{
         width: 100%;
     }
     
+}
+
+
+@media only screen and (min-width:420px) and (max-width:768px){
+    .home__text-wrapper h1{
+        font-size: 3rem;
+        line-height: 4rem;
+        
+        }
+    #btn__contact{
+        margin-left: 100px;
+        background-color:#000000;
+        color:var(--yellow-theme-sub-text-color);
+        padding:15px;
+        font-size: 20px;
+        
+    }
+    .home__text-wrapper > img{
+        margin-left: 30px;
+    }
+    
+    .home__text-wrapper{
+        flex-direction: column;
+        
+        margin-left: 40px;
+    }
+}
+
+    
+
+@media only screen and (min-width:769px) and (max-width:990px){
+    .home__text-wrapper h1{
+        font-size: 3rem;
+        line-height: 3rem;
+        
+}
+
+    
+    #btn__contact{
+        margin-left: 200px;
+        width: 200px;
+        
+    }
+}
+@media only screen and (max-width:375px){
+    .text__wrapper{
+        background: red;
+    }
 }

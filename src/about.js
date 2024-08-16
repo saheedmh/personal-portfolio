@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Pageheader from "./headertest";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
@@ -55,7 +55,8 @@ const About = (headerTest) => {
               transform: "translatex(0px)",
             }}
           >
-            <h3>Front End Developer</h3>
+        
+            <h3 style={{color:"var(--yellow-theme-sub-text-color)", fontWeight:"bold"}} className="personal__header">Front End Developer</h3>
             <p>{Jobsummary}</p>
           </Animate>
 
@@ -70,7 +71,7 @@ const About = (headerTest) => {
               transform: "translatex(0px)",
             }}
           >
-            <h3>Personal Information</h3>
+            <h3 style={{color:"var(--yellow-theme-sub-text-color)"}}>Personal Information</h3>
             <ul className="personal__info">
               {personalDetails.map((item, i) => (
                 <li key={i}>
@@ -81,6 +82,7 @@ const About = (headerTest) => {
             </ul>
           </Animate>
         </div>
+        
         <Animate
           play
           duration={1.5}
@@ -92,6 +94,7 @@ const About = (headerTest) => {
             transform: "translatex(0px)",
           }}
         >
+        
           <div className="about__content__servicewrapper">
             <div className="inner__content__services__wrappers">
               <div className="first-child">

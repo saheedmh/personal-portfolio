@@ -29,7 +29,7 @@ const PortfolioData =[
       id: 2,
       image:Img3,
     name:"Figma dashboard UI kit for data design web app",
-      gtihub:'https://github.com/saheedmh',
+      github:'https://github.com/saheedmh',
       demo:'https://dribbble.com/shots/23210044-NVO-Trading-panel'
    },
    {
@@ -52,7 +52,7 @@ const PortfolioData =[
   id: 3,
   image:Img6,
   name:"Crypto Currency Dashboard and  Financial visualization",
-  gtihub:'https://github.com/saheedmh',
+  github:'https://github.com/saheedmh',
   demo:'https://dribbble.com/shots/23210044-NVO-Trading-panel'
 }
 
@@ -102,7 +102,7 @@ console.log(filteritem);
     <div className="portfolio__content">
       <ul className='portfolio__content__filter'>
       {FilterData.map((item)=>(
- <li className={item.filterId === filterValue ? 'active' : "" } onClick={()=> handlefiltervalue(item.filterId)} 
+ <li className={item.filterId === filterValue ? 'active' : "" } id="portfolioId" onClick={()=> handlefiltervalue(item.filterId)} 
  key={item.filterId}>
   {item.label}
  </li>

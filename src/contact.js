@@ -68,26 +68,29 @@ transform : "translateX(0px)"
 <form className="contact__content__form " ref={form} onSubmit={sendEmail}>
   <div className="contact__content__form__control">
     <div className="nameWrapper">
+    <label htmlFor="name" className='nameLabel'>Name</label>
+    
       <input type={'text'} 
       required
       className='inputName' name='name' />
-      <label htmlFor="name" className='nameLabel'>Name</label>
-    </div>
+      </div>
 
     <div className="emailWrapper">
+    <label htmlFor="email" className='emailLabel'>Emal</label>
       <input type={'text'}
        required
         className='inputEmail' name='email' />
-      <label htmlFor="email" className='emailLabel'>Emal</label>
+    
     </div>
    
 
     <div className="descriptionWrapper">
+    <label htmlFor="description" className='descriptionLabel'>Description </label>
       <textarea type={'text'} 
       required
-      rows={5}
-      className='descriptionName' name='description' />
-      <label htmlFor="description" className='descriptionLabel'>Description </label>
+      rows={8} 
+      className='descriptionName' name='description' style={{padding:'20px', marginRight:"40px"}} />
+      
     </div>
   
     </div>

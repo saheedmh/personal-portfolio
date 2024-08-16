@@ -1,14 +1,15 @@
 
 import Home from './home';
+import Navbars from './component/navbar/navbars';
 import Resume from './resume'
-//import Nav from './navbar2';
+import Skill from './skill';
 import About from './about';
-import Images from './images';
+//import Nav from './navbar2';
+import Portfolio from './portfolio';
+
 import Contact from './contact';
 import Testimonia from './testimonial';
-import Skill from './skill';
-import Portfolio from './portfolio';
-import Navbars from './component/navbar/navbars';
+
 
 import Footer from './Footer';
 
@@ -49,13 +50,13 @@ const  App =() => {
 <Navbars/>
 <Home/>
 <Resume/>
-{/**<Nav/>**/}
-<About/>
-<Portfolio/>
-<Testimonia/>
-<Contact/>
 <Skill/>
-<Images/>
+{/**<Nav/>**/}
+{<About/>}
+{<Portfolio/>}
+<Testimonia/>
+{<Contact/>}
+
 {/**
 
 <Routes>

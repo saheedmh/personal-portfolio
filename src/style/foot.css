@@ -35,7 +35,7 @@ footer a{
     color:var(--yellow-theme-sub-text-color)
 } 
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:640px){
     .permalink{
         flex-direction:column;
         gap:1.5rem;
