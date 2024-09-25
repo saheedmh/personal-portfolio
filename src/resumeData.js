@@ -25,19 +25,19 @@ export const Resumedata = {
 
     experience:  [
         {
-            title:"consultant",
+            title:"junior web development",
             subtititle:"Abuja, area 10",
             description:"user experience, visual Design",
         },
         {
             title:"senior Consultant",
-            subtitle:"lONDON , UK",
+            subtitle:"Abuja , Nigeria",
             description:
             "web development, Databases, backend development"
         },
         {
             title:"project manager",
-            subtitle:"miami, Usa",
+            subtitle:"Abuja, Nigeria",
             description:
             "Creative Director Project management, Team leading",
         },

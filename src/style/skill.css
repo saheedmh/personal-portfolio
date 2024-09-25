@@ -52,7 +52,7 @@
         
       }
 }
-@media only screen and (max-width:768px){
+@media only screen and (width>=360px) and (max-width:640px){
     .skill > .skill__content__wrapper{
         flex-direction: column;
         width: 90%;
@@ -66,9 +66,9 @@
         margin-bottom:20px;
     }
 } 
-@media only screen and (min-width:375px) and (max-width:640px){
+@media only screen and (min-width:360px) and (max-width:640px){
   .skill{
-    margin-left: 26px;
+    margin-inline:auto;
     
   }
 }

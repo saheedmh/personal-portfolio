@@ -75,10 +75,12 @@ button:hover{
 }
 
 
-@media only screen and (min-width:420px) and (max-width:768px){
+@media only screen and (width>=360px)  and (max-width:640px){
     .home__text-wrapper h1{
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align:center;
+        
         
         }
     #btn__contact{
@@ -95,29 +97,10 @@ button:hover{
     
     .home__text-wrapper{
         flex-direction: column;
-        
+        margin-top:65px;
         margin-left: 40px;
     }
 }
 
     
 
-@media only screen and (min-width:769px) and (max-width:990px){
-    .home__text-wrapper h1{
-        font-size: 3rem;
-        line-height: 3rem;
-        
-}
-
-    
-    #btn__contact{
-        margin-left: 200px;
-        width: 200px;
-        
-    }
-}
-@media only screen and (max-width:375px){
-    .text__wrapper{
-        background: red;
-    }
-}
