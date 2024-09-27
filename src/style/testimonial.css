@@ -1,15 +1,15 @@
 .container, .container__testimonial{
-    min-width:50%;
+    width:50%;
     margin-bottom:4rem;
     display: flex;
     flex-wrap: wrap;
 }
 .clients__avatar{
-      min-width: 300px;
+      width: 300px;
      margin:0px auto 1rem;
      overflow: hidden;
      border-radius: 50%;
-     min-height: 300px;
+     height: 300px;
   
         
 }
@@ -55,8 +55,8 @@ width:100%;
      
 }
 .avatar{
-    min-width:300px;
-    min-height:300px;
+    width:300px;
+    height:300px;
 }
 .testimonial{
     display: flex;
@@ -78,10 +78,12 @@ width:100%;
 
     
 
-@media screen and (min-width:360px)  and (max-width:640px){
-    .container .testimonial__container{
-        min-width:var(--container-width-sm);
-        margin-top:300px;
+@media only screen and (width>=360px)  and (max-width:640px){
+     .Testimonial__container{
+   min-width:340px;
+   margin-left: auto;
+   margin-right: auto;
+        
     }
     .client__review{
         min-width:var(--container-width-sm);
@@ -89,12 +91,10 @@ width:100%;
     }
     .avatar{
         border-radius: 50%;
-        width: 200px;
+        width: 300px;
         height: 200px;
     }
-    .testimonials{
-        flex-wrap: wrap;
-    }
+    
     .swiper-testimonials{
         width: 100%;
         
@@ -103,7 +103,8 @@ width:100%;
        
     }
     .clients__avatar{
-        width: 200px;
+        max-width:300px;
+        max-height: 300px;
        margin:0px auto 1rem;
        overflow: hidden;
        border-radius: 100%;

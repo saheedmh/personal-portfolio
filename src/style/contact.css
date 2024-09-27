@@ -91,7 +91,7 @@
 }
    
 
-@media only screen and (max-width:760px){
+@media only screen and (width>=340px)and (max-width:760px){
     .contact__content__form > .contact__content__form__control{
         grid-template-columns: repeat(1, 1fr);
     }

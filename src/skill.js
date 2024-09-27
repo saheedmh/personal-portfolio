@@ -32,7 +32,7 @@ const Skill = () => {
 
          <h3 className='skill__content__header'>{item.label}</h3>
             
-            <div>
+            <div className='front__end'>
       {
         item.data.map((skillITem, j) =>(
           <AnimateKeyframes
@@ -53,16 +53,24 @@ const Skill = () => {
 
           </div>
 
+
+
           </AnimateKeyframes>
         )) 
       }
             </div>
+            
+
+
+
+
             </Animate>
           </div>
         
         ))
       }
     </div>
+    
     </section>
   )
 }

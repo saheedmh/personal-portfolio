@@ -57,9 +57,9 @@ const Resume = () => {
 
         </VerticalTimeline>
       </div>
-</div>
 
-    <div className="timeline">
+
+    
       <div className="timeline__experience">
         <h3 className='timeline__experience__header-text'>Experience</h3>
         <VerticalTimeline 

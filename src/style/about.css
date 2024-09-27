@@ -1,11 +1,12 @@
 .about__content{
     display: flex;
+    flex-direction:column;
     gap:20px;
     padding:20px;
     width:100%;
 }
 .about__content__personalwrapper .about__content__servicewrapper{
-    min-width:50%;
+    width:50%;
 
 }
 .about__content__servicewrapper{
@@ -49,11 +50,12 @@
     
 
 .about__content__servicewrapper > .inner__content__services__wrappers {
-        min-width:350px;
-        min-height: 350px;
-        background:radial-gradient(180px, var(--yellow-theme-main-color), transparent 90%);
-        position:relative;
+        width:350px;
+        height: 350px;
         
+        background:radial-gradient(100px, var(--yellow-theme-main-color), transparent, 120%)
+       ;
+        position:relative;
         border-radius:50%;
         border: 1.5px solid var(--yellow-theme-main-color);
         animation:rotation 10s linear 1s infinite;
@@ -66,8 +68,8 @@
     
     div:nth-child(2){
         position:absolute;
-        bottom:-10%;
-        left:41%;
+        right:-92%;
+        top:40%;
     }
 
     div:nth-child(3){
@@ -97,7 +99,7 @@
         
     }
 
-    @media  only screen and (min-width:360px) {
+    @media  only screen and (min-width:360px) and (max-width:640px) {
         .about__content {
             
             flex-direction: column;
@@ -106,15 +108,15 @@
             margin-top:20px;
         }
          .about__content__personalwrapper .about__content__servicewrapper{
-            width:100%;
+            
         }
         .about__content__servicewrapper{
             
             margin:10px 0px;
         }
         .inner__content__services__wrappers {
-            min-width:300px;
-            min-height:300px;
+            max-width:300px;
+            max-height:250px;
             margin:auto;
 
             background:radial-gradient(100px, var(--yellow-theme-main-color), transparent, 120%)
@@ -132,6 +134,15 @@
 
 
 }
+span.label, span.value{
+    display:inline;
+    flex-wrap: nowrap;
+    
+    
+    
+
+    
+}
 .personal__header{
     margin-bottom:10px;
     font-size:1.4rem;
@@ -145,7 +156,6 @@
 .about > .about__content > .about__content__personalwrapper > p{
     font-size: 18px;
     line-height: 20px;
-    background-color: red;
 }
         }
         

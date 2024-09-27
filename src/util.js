@@ -1,7 +1,7 @@
 export const SkillsData = [
     {
         label: "front end",
-        data : [
+        data: [
             {
                 skillName : "HTML",
             percentage : "90",

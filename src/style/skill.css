@@ -1,11 +1,18 @@
 .skill > .skill__content__wrapper{
-    display: flex;
+    display:flex;
     gap:20px;
     padding:20px;
+  
+    
+  }
+  
+
+  .skill{
+    
+    
   }
     .skill__content__wrapper{
-        flex:1;
-        flex-direction: column;
+      display: flex;
         align-items: center;
        
        
@@ -55,8 +62,9 @@
 @media only screen and (width>=360px) and (max-width:640px){
     .skill > .skill__content__wrapper{
         flex-direction: column;
-        width: 90%;
-        margin-left:50px; 
+        max-width: 300px;
+        margin:0 auto;
+        box-sizing: border-box;
     } 
     .skill{
       margin-top:50px;
@@ -66,10 +74,5 @@
         margin-bottom:20px;
     }
 } 
-@media only screen and (min-width:360px) and (max-width:640px){
-  .skill{
-    margin-inline:auto;
-    
-  }
-}
+
       
