@@ -34,7 +34,7 @@ const personalDetails = [
 ];
 
 const Jobsummary =
-  "Seasoned and independent Front End developer with 3 years of experience i bleeding the art of design with skill and programming to deliver as impressive and engaging user experience through efficient website development proactive feature optimization, and relentless debugging, Very passionate about aesthestics and Ui design, i't is imperative that you provide a thorough professional to your resume, as a Front End Developer you will be judge by your ability to use UX and UI concept and folow design guidelines. it's about expressing your attention your attention to detail and how you can help implement design ideas for your future employer ";
+  "My name is seidu menyaga i'm a seasoned and independent Front End developer with 3 years of experience i bleeding the art of design with skill and programming to deliver as impressive and engaging user experience through efficient website development proactive feature optimization, and relentless debugging, Very passionate about aesthestics and Ui design, i't is imperative that you provide a thorough professional to your resume, as a Front End Developer you will be judge by your ability to use UX and UI concept and folow design guidelines. it's about expressing your attention your attention to detail and how you can help implement design ideas for your future employer ";
 const About = (headerTest) => {
 
   
