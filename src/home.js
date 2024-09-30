@@ -15,13 +15,20 @@ const Home = () => {
     
       <div className="home__text-wrapper" id="text__wrapper">
       
-        <h1>
-          Hello, I'm Seidu
-          <br />
-          Front end developer
-        </h1>
+      <div className="animate-container">
+        <h1 className="static-text">I'm</h1>
+          <ul className="dynamic-text">
+            <li><span>Designer</span></li>
+             <li><span>Developer</span></li>
+              <li><span>Freelancer</span></li>
+               <li><span>Consultant</span></li>
+          </ul>
+        </div>
+        <div className="img">
         <img src={image1} sizes={30} style={{width:"300px", height:"300px", marginRight:"-10px"}} alt="myimg"></img>
-      </div>
+     
+        </div>
+         </div>
       
       <Animate
         play

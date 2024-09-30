@@ -5,7 +5,7 @@
     padding:0 20px ;
     flex:1;
     max-width: 100%;
-    min-height: 80px;
+    
     margin:0 auto;
     align-items: center;
     font-size: 1.2rem;
@@ -69,8 +69,12 @@
     .nav-icon{
     display: block;
     cursor: pointer;
-    margin-left: 120px;
+    position:absolute;
+   
     padding-right:20px;
+    left:300px;
+    right:0px;
+    top:20px;
     
     
     
@@ -92,6 +96,12 @@
     height: 0;
     
 }
+.navbar__logo{
+    
+    position:absolute;
+    top:20px;
+    bottom:0;
+}
 .navbar__container__menu__item{
     border-bottom:1px solid #181818;
     
@@ -101,6 +111,9 @@
     
     
     
+}
+.navbar{
+    min-height:75vh;
 }
 .navbar__container__menu__links
 {

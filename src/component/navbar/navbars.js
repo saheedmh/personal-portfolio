@@ -50,7 +50,7 @@ const Navbars = () => {
         let home = document.getElementById("home");
         if(setToggleIcon!==toggleIcon){
             
-        home.style.marginTop="400px";
+        home.style.marginTop="100px";
         }
         else{
             home.style.marginTop="0px";
@@ -64,7 +64,7 @@ const Navbars = () => {
 
         <Link to={'/'}>
 <h2>
-<a href="a" className='navbar__logo' style={{color:'var(--yellow-theme-main-color)', textDecoration:'none'}}>SaheedTech</a>
+<a  className='navbar__logo' style={{color:'var(--yellow-theme-main-color)', textDecoration:'none'}}>SaheedMHTech</a>
 </h2>
         </Link>
 

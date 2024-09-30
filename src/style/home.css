@@ -5,17 +5,22 @@
     position: relative;
     flex-direction: column;
     
-}
-.home__text-wrapper{
-
-    display: flex;
-     gap:5px;
-    justify-content: space-around;
-    margin-top:15px;
+    
     
 }
-.home__text-wrapper > img{
+.home__text-wrapper{
+     justify-content: space-around;
+    display: flex;
+     gap:70px;
+     align-items: center;
+ 
+}
+.img > img{
     border-radius: 25% 0 25% 0;
+    min-width:400px;
+    min-height:400px;
+    margin-left: 50px;
+    
 }
 #btn__contact{
     margin-left: 200px;
@@ -54,7 +59,51 @@ animation: typing 2.5s steps(20, infinite);
     
     
 }
+.animate-container{
 
+display: flex;
+justify-content: center;
+align-items: center;
+gap:5px;
+
+}
+.static-text{
+    color:white;
+    font-size:60px;
+    font-weight:500px;
+}
+.dynamic-text li{
+    font-size:clamp(1.5rem, 4.5rem, 3.0rem);
+    position:relative;
+    list-style: none;
+    font-weight:500;
+    top:0;
+    animation: slide 15s steps(4)infinite;
+    color:var(--yellow-theme-main-color);
+}
+.dynamic-text li{
+    position: relative;
+}
+ .animate-container .dynamic-text{
+    
+    margin-left:15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    
+
+}
+.dynamic-text li::after{
+    content:'';
+    width:100%;
+    height: 100%;
+    position:absolute; 
+   
+    border-left: 2px solid #ff4c29;
+    animation: animate 2.5s steps(10)infinite; 
+    left:0;
+    background-color:var(--yellow-theme-background-color);
+}
 button{
     padding: 10px 60px;
     cursor: pointer;
@@ -78,8 +127,22 @@ button:hover{
     }
     
 }
+@keyframes animate{
+    40%, 
+    60%{
+        left:calc(100% + 30px)
+    }
+    100%{
+        left:0;
+    }
 
+}
 
+@keyframes slide{
+    100% {
+        top:-360px;
+    }
+}
 @media only screen and (width>=360px)  and (max-width:640px){
     .home__text-wrapper h1{
         font-size: 2rem;
@@ -96,15 +159,23 @@ button:hover{
         font-size: 20px;
         
     }
-    .home__text-wrapper > img{
-        margin-left: 30px;
+    .img > img{
+        
+        margin-inline:auto;
+        max-width:250px;
+        max-height: 200px;
     }
     
     .home__text-wrapper{
         flex-direction: column;
-        margin-top:65px;
+        
         margin-left: 40px;
     }
+
+ .animate-container{
+ height:0px;
+
+}
 }
 
     
