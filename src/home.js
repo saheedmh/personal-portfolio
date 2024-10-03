@@ -14,7 +14,7 @@ const Home = () => {
     <section className="home" id="home">
     
       <div className="home__text-wrapper" id="text__wrapper">
-      
+      <h1>My name is seidu menyaga</h1>
       <div className="animate-container">
         <h1 className="static-text">I'm</h1>
           <ul className="dynamic-text">

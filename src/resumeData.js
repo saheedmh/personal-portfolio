@@ -28,12 +28,14 @@ export const Resumedata = {
             title:"junior web development",
             subtititle:"Abuja, area 10",
             description:"user experience, visual Design",
+            
+        
         },
         {
-            title:"senior Consultant",
+            title:"FreeLancer",
             subtitle:"Abuja , Nigeria",
             description:
-            "web development, Databases, backend development"
+            "front-end, Databases, back-end development"
         },
         {
             title:"project manager",

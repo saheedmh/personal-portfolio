@@ -65,6 +65,7 @@
             transition: all 0.2s ease;
             color:var(--yellow-theme-sub-text-color);
             font-size:16px;
+            transform : translateY(-50%)
         }
         
         .inputName:focus, .inputEmail:focus,
@@ -81,6 +82,11 @@
         font-size:18px;
         top:-25px;
         left:0px;
+    
+    }
+    .nameLabel::focus{
+    
+
     }
 
     

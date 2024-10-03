@@ -19,6 +19,7 @@ const [done, setDone] = useState(false)
       .then((result) => {
           console.log(result.text);
           setDone(true)
+          setDone("");
       }, (error) => {
           console.log(error.text);
           

@@ -50,7 +50,7 @@
     display: none;
 }
 
-@media only screen and (width>=360px )  and (width<=640px){
+@media only screen and (width>=360px )  and (width<=760px){
     .navbar__container__menu{
         display: flex;
         flex-direction: column;
@@ -86,7 +86,7 @@
 }
 .navbar__container__menu__item > .navbar__container__menu__links{
     cursor: pointer;
-    
+    margin-inline:auto;
     z-index: 1;
     
     

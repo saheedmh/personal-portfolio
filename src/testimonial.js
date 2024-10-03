@@ -49,7 +49,7 @@ function Testimonia() {
     
   ]
   return (
-    <section class='testimonial'>
+    <section class='testimonial' id='testimonial'>
       <h5>Review From Clients</h5>
       <h2>Testimonials</h2>
       <Swiper className="container Testimonial__container"
