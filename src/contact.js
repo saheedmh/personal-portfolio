@@ -77,7 +77,7 @@ transform : "translateX(0px)"
       </div>
 
     <div className="emailWrapper">
-    <label htmlFor="email" className='emailLabel'>Emal</label>
+    <label htmlFor="email" className='emailLabel'>Email</label>
       <input type={'text'}
        required
         className='inputEmail' name='email' />

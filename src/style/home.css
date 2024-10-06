@@ -149,9 +149,10 @@ button:hover{
 @media only screen and (width>=360px)  and (max-width:760px){
     .home__text-wrapper h1{
         font-size: 2rem;
-        line-height: 3rem;
+        line-height: 1rem;
         text-align:center;
-        
+        margin-top:20px;
+        word-spacing: -5px;
         
         }
     #btn__contact{
@@ -165,8 +166,8 @@ button:hover{
     .img > img{
         
         margin-inline:auto;
-        max-width:100px;
-        max-height: 200px;
+        min-width:200px;
+        min-height: 200px;
     }
     
     .home__text-wrapper{
