@@ -148,11 +148,13 @@ button:hover{
 }
 @media only screen and (width>=360px)  and (max-width:760px){
     .home__text-wrapper h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 1rem;
         text-align:center;
-        margin-top:20px;
-        word-spacing: -5px;
+        overflow:hidden;
+        max-width:fit-content;
+        display:flex;
+        flex-wrap:wrap;
         
         }
     #btn__contact{
