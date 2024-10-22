@@ -47,15 +47,7 @@ const Navbars = () => {
 
     const handleToggleIcon =() =>{
         setToggleIcon(!toggleIcon)
-        let home = document.getElementById("home");
-        if(setToggleIcon!==toggleIcon){
-            
-        home.style.marginTop="100px";
-        }
-        else{
-            home.style.marginTop="0px";
-       }
-            
+             
     }
   return (
     <div >

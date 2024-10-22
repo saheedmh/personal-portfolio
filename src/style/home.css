@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    flex-direction: column;
+    position: relaive;
+    
+    
     
     
     
@@ -177,7 +178,9 @@ button:hover{
         
         margin-left: 40px;
     }
-
+.home{
+    flex-direction:column;
+}
  .animate-container{
  height:0px;
 

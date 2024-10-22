@@ -11,15 +11,15 @@ const Home = () => {
     navigate("/contact");
   };
   return (
-    <section className="home" id="home">
+    <section className="home">
     
       <div className="home__text-wrapper" id="text__wrapper">
-    <h1>Hello! my name is seidu </h1>
+    <h1>Hello! i'm seidu </h1>
       <div className="animate-container">
         <h1 className="static-text">I'm</h1>
           <ul className="dynamic-text">
-            <li><span>Designer</span></li>
-             <li><span>Developer</span></li>
+            <li><span>Front-end developer</span></li>
+             
               <li><span>Freelancer</span></li>
                <li><span>Consultant</span></li>
           </ul>
