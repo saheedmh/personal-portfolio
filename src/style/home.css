@@ -74,6 +74,7 @@ gap:5px;
     color:white;
     font-size:60px;
     font-weight:500px;
+    padding:5px;    
 }
 .dynamic-text li{
     font-size:clamp(1.5rem, 4.5rem, 3.0rem);
@@ -153,7 +154,7 @@ button:hover{
         line-height: 1rem;
         text-align:center;
         overflow:hidden;
-        max-width:fit-content;
+        max-width:max-content;
         display:flex;
         flex-wrap:wrap;
         
@@ -178,12 +179,21 @@ button:hover{
         
         margin-left: 40px;
     }
+    .static-text{
+        padding: 20px;
+
+        width:100px;
+    
+    }
 .home{
     flex-direction:column;
 }
  .animate-container{
  height:0px;
 
+}
+.dynamic-text >li > span{
+    margin-left: 10px;
 }
 }
 

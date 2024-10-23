@@ -64,12 +64,11 @@
         justify-content: center;
         z-index: 999;
         border-top: 1px solid #fff;
-        max-width: 23%;
-        position:fixed;
-        
-
-        
+        max-width: 260px;
+        position:absolute;
         top:40px;
+        
+        overflow-x:hidden;
         border: none;;
         flex-wrap: wrap;
         backgrond-color: transparent !important;
