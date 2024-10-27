@@ -7,11 +7,17 @@ import About from './about';
 //import Nav from './navbar2';
 import Portfolio from './portfolio';
 
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+
 import Contact from './contact';
 import Testimonia from './testimonial';
 
 
 import Footer from './Footer';
+
+
 
 //import '//App.css'
 //import { useEffect, useMemo, useState } from "react";
@@ -45,38 +51,35 @@ const  App =() => {
 
   
   return( 
+   
+
     <div className="App"> 
-<div className='App__mainpage__content'>
-<Navbars/>
+ 
+
 <Home/>
 <Resume/>
 <Skill/>
-{/**<Nav/>**/}
+<Navbars/>
 {<About/>}
 {<Portfolio/>}
 <Testimonia/>
 {<Contact/>}
 
-{/**
-
-<Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/resume' element={<Resume/>} />
-          <Route path='/about' element={<About/>} />
-          <Route path='/testimonial' element={<Testimonia/>} />
-          <Route path='/contact' element={<Contact/>} />
-          
-          <Route  path='/portfolio' element={<Portfolio/>} />
-          <Route  path='/skill' element={<Skill/>} />
-        </Routes>
-
- */}
 
 
-</div>
 
+
+
+
+
+
+
+      
+     
       <Footer/> 
     </div>
+   
+ 
   );
 }
 

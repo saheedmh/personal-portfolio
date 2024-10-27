@@ -1,5 +1,9 @@
+
+
+
+
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import {FaBars} from 'react-icons/fa'
 import {HiX} from 'react-icons/hi'
 import '../../style/navbar.css'
@@ -49,16 +53,17 @@ const Navbars = () => {
         setToggleIcon(!toggleIcon)
              
     }
-  return (
+        
+        return (
     <div >
       <nav className='navbar'>
         <div className='navbar__container'>
 
-        <Link to={'/'}>
+        <NavLink to={'/'}>
 <h2>
-<a  className='navbar__logo' style={{color:'var(--yellow-theme-main-color)', textDecoration:'none'}}>SaheedMHTech</a>
+<a  className='navbar__logo' style={{color:'var(--yellow-theme-main-color)',  textDecoration:'none'}} href="#" >SaheedMHTech</a>
 </h2>
-        </Link>
+        </NavLink>
 
         </div>
 
@@ -66,29 +71,14 @@ const Navbars = () => {
         <li className='navbar__container__menu__item'><a href="#" className='navbar__container__menu__links'>Home</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#about">About</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#resume">Resume</a></li>
-<li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#skill">Experience</a></li>
+<li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#skill">Skill</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#portfolio">Portfolio</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#testimonial">Testmonial</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#contact">Contact</a></li>
 
-      {/**
-      {
-            data.map((item, Key)=>(
-                <li key={Key} className='navbar__container__menu__item'>
-         < Link className='navbar__container__menu__links' to={item.to} href={item.to}>
-            {item.label }
-         </Link>
-        
-                </li>
-            ))
-        }
     
-      
-      
-      
-      
-       */}  
-{/**
+       
+{/** 
 <li className='navbar__container__menu__item'>
 <a href="#">Home</a>
 <a href="#about">About</a>
@@ -97,8 +87,8 @@ const Navbars = () => {
 <a href="#portfolio">Portfolio</a>
 <a href="#testimonial">Testmonial</a>
 
-<a href="#contact">Contact</a></li>**/}
-
+<a href="#contact">Contact</a></li>
+**/}
         </ul>
 
         <div className="nav-icon" onClick={handleToggleIcon}>
@@ -107,7 +97,7 @@ const Navbars = () => {
         }
         </div>
         <div>
-           {/** <FontAwesomeIcon icon={faFacebook} style={{}}/>*/} 
+            <FontAwesomeIcon icon={faFacebook} style={{}}/>
             <i className=' fab faFacebook'></i>
                     </div>
       </nav>
@@ -116,3 +106,8 @@ const Navbars = () => {
 }
 
 export default Navbars
+
+  
+
+
+
