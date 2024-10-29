@@ -56,10 +56,10 @@ const  App =() => {
     <div className="App"> 
  
 
+<Navbars/>
 <Home/>
 <Resume/>
 <Skill/>
-<Navbars/>
 {<About/>}
 {<Portfolio/>}
 <Testimonia/>

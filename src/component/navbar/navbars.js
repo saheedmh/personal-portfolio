@@ -67,7 +67,10 @@ const Navbars = () => {
 
         </div>
 
-        <ul className={`navbar__container__menu ${toggleIcon ? 'active' : ""}`} style={{color:"white"}}>
+        <ul className={`navbar__container__menu ${toggleIcon ? 'active' : "navLinks"}`} style={{color:"white"}}>
+       
+        {/**<ul className={toggleIcon    ? 'active' :'.navbar__container__menu'}>
+        */}
         <li className='navbar__container__menu__item'><a href="#" className='navbar__container__menu__links'>Home</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#about">About</a></li>
 <li className='navbar__container__menu__item'><a className='navbar__container__menu__links' href="#resume">Resume</a></li>
@@ -91,15 +94,12 @@ const Navbars = () => {
 **/}
         </ul>
 
-        <div className="nav-icon" onClick={handleToggleIcon}>
+        <button className="nav-icon" onClick={handleToggleIcon} style={{width:'100px', height:"50px", marginLeft:"30px"}}>
         {
             toggleIcon ? <HiX size={30}/>: <FaBars size={30}/>
         }
-        </div>
-        <div>
-            <FontAwesomeIcon icon={faFacebook} style={{}}/>
-            <i className=' fab faFacebook'></i>
-                    </div>
+        </button>
+        
       </nav>
     </div>
   )

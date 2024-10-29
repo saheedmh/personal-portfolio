@@ -2,32 +2,21 @@
     display: flex;
     justify-content: space-between;
     background-color: var(--yellow-theme-nav-background-color);
-    
     max-width: 100%;
-    
     margin:0 auto;
     align-items: center;
     font-size: 1.2rem;
-    
-
-    
     padding:5px;
-
     align-items: center;
     height: 5rem;
-
-    
-    
 }
 .navbar__container__menu{
     display: flex;
     gap:0.6rem;
     text-align: center;
     margin-top:1.3rem;
-    
-}
+    }
  .navbar__container__menu__item{
-    
     font-size: 20px;
     line-height: 40px;
     cursor: pointer;
@@ -40,8 +29,7 @@
     display: block;
     background-color: transparent;
     transition: all 0.5s ease;
-    
-}
+    }
 .navbar__container__menu__item:hover::after{
     width: 100%;
     background-color: var(--yellow-theme-main-color);
@@ -66,29 +54,23 @@
         max-width: 25%;
         position:absolute;
         left: -110%;
-        top:40px;
+        top:30px;
         border: none;;
         flex-wrap: wap;
         background-color: transprent !important;
         opacity: 1;
         transition:all 0.5s ease;
-        
-        
-
-
-}
+        }
     .nav-icon{
     display: block;
     cursor: pointer;
     position:absolute;
-   
-    padding-right:20px;
+    padding: 0px;
+    border-radius: 0px;
     left:300px;
     right:0px;
-    top:20px;
-    
-    
-    
+    top:20px;  
+     
 } 
 .active{
     background-color: #181818;
@@ -99,16 +81,11 @@
     cursor: pointer;
     margin-inline:auto;
     z-index: 1;
-    
-    
-    
-}
+    }
 .navbar__container__menu__item::after{
     height: 0;
-    
-}
+    }
 .navbar__logo{
-    
     position:absolute;
     top:20px;
     bottom:0;
@@ -118,15 +95,10 @@
     color:white;
     display: block;
     cursor: pointer;
-    
-
     }
-       
-
-.navbar__container__menu__links
+    .navbar__container__menu__links
 {
     display: block;
-    
     cursor:pointer;
     
 }
