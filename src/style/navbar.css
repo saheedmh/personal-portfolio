@@ -67,11 +67,10 @@
     position:absolute;
     padding: 0px;
     border-radius: 0px;
-    left:300px;
+    left:200px;
     right:0px;
     top:20px;  
-     
-} 
+    } 
 .active{
     background-color: #181818;
     left:0;
