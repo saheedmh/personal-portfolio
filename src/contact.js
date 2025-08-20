@@ -95,7 +95,7 @@ transform : "translateX(0px)"
     </div>
   
     </div>
-  <button>submit</button>
+  <button style={{color:"white", display:"flex", justifyContent:"center", width:"100%"}}>submit</button>
 <span style={{color:"white"}}>{done && "thanks for contact me!"}</span>
 </form>
 </Animate>

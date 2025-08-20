@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import image1 from './images/saheed.jpg'
 
-import "./style/home.css";
+
 import { Animate } from "react-simple-animate";
 
 const Home = () => {
@@ -14,14 +14,14 @@ const Home = () => {
     <section className="home">
     
       <div className="home__text-wrapper" id="text__wrapper">
-    <h1>Hello! i'm seidu </h1>
+    <h1>H! i'm seidu </h1>
       <div className="animate-container">
         <h1 className="static-text">I'm</h1>
           <ul className="dynamic-text">
             <li><span>FrontEnd developer</span></li>
              
               <li><span>Freelancer</span></li>
-               <li><span>Consultant</span></li>
+               
           </ul>
         </div>
         <div className="img">
@@ -42,7 +42,7 @@ const Home = () => {
         }}
       >
         <div className="btn-contact__me">
-          <a  href="./images/mycv.pdf" download="./images/mycv.pdf" onClick={handleNavigateToContactME } id="btn__contact">Download my CV</a>
+          <a  href="./images/mycv.pdf" download="./images/mycv.pdf" onClick={handleNavigateToContactME } id="btn__contact">Dmy CV</a>
         </div>
       </Animate>
     </section>

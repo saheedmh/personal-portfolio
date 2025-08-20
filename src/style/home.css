@@ -2,16 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relaive;
+    height: 100vh;
+    background-color: #ff4c29;
     
-    
-    
-    
-    
-}
+    }
 .home__text-wrapper{
      justify-content: space-around;
-     display: flex;
+     display: fex;
      gap:70px;
      align-items: center;
  
@@ -148,7 +145,7 @@ button:hover{
         top:-360px;
     }
 }
-@media only screen and (width>=360px)  and (max-width:760px){
+@media only screen and (max-width:760px){
     .home__text-wrapper h1{
         font-size: 1.5rem;
         line-height: 1rem;
@@ -160,6 +157,7 @@ button:hover{
         margin-top:55px;
         
         }
+        
     #btn__contact{
         margin-left: 100px;
         background-color:#000000;
@@ -175,10 +173,11 @@ button:hover{
         min-height: 200px;
     }
     
-    .home__text-wrapper{
+    .section-id{
         flex-direction: column;
-        
         margin-left: 40px;
+        display:flex;
+        background-color: red;
     }
     .static-text{
         padding: 20px;
@@ -188,6 +187,8 @@ button:hover{
     }
 .home{
     flex-direction:column;
+    display: flex;
+    background-color: white;
 }
  .animate-container{
  height:0px;

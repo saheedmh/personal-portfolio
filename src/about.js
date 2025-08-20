@@ -33,17 +33,25 @@ const personalDetails = [
   },
 ];
 
-const Jobsummary =
-  "My name is seidu menyaga i'm a seasoned and independent Front End developer with 3 years of experience i bleeding the art of design with skill and programming to deliver as impressive and engaging user experience through efficient website development proactive feature optimization, and relentless debugging, Very passionate about aesthestics and Ui design, i Created Web pages and web apps with attractive UI/UX interface. i have also built some project, which has helped me master my core language and libraries, and also freelanced for a moment. check out my CV for more clarity";
-const About = (headerTest) => {
+const Jobsummary =[
+  "Hi, I'm Seidu Menyaga — a Front-End Developer with 3 years of hands-on experience building responsive, performance-driven web applications using React, JavaScript, HTML, and CSS.",
+  "I specialize in crafting clean, user-friendly interfaces with a strong focus on aesthetics, UI/UX design, and feature optimization. I love turning design concepts into functional front-end experiences and writing code that is both scalable and maintainable.",
+  "I'm currently open to remote or on-site opportunities, and I’m excited to contribute to teams that value creativity, collaboration, and high-quality code.",
+]
+
+  const About = (headerTest) => {
 
   
   return (
-    <section id="about" className="about">
-      <Pageheader headerText="About me" Icon={<BsInfoCircleFill size={40} />} />
+    <>
+    <Pageheader headerText="About me" Icon={<BsInfoCircleFill size={40} />} />
 
-      <div className="about__content">
-        <div className="about__content__personalwrapper">
+    <section id="about" className="about flex ">
+      
+      <div className="about__content  ">
+      
+        <div className="about__content__personalwrapper ">
+
           <Animate
             play
             duration={1.5}
@@ -55,9 +63,21 @@ const About = (headerTest) => {
               transform: "translatex(0px)",
             }}
           >
-        
-            <h3 style={{color:"var(--yellow-theme-sub-text-color)", fontWeight:"bold"}} className="personal__header">Front End Developer</h3>
-            <p>{Jobsummary}</p>
+        <div className="">
+            
+        <p className="text-lg mb-4">
+          Hi, I'm <strong>Seidu Menyaga</strong> — a Front-End Developer with <strong>3 years of hands-on experience</strong> building responsive, performance-driven web applications using <strong>React, JavaScript, HTML</strong>, and <strong>CSS</strong>.
+        </p>
+        <p className="text-lg mb-4">
+          I specialize in crafting clean, user-friendly interfaces with a strong focus on <strong>aesthetics</strong>, <strong>UI/UX design</strong>, and <strong>feature optimization</strong>. I love turning design concepts into functional front-end experiences and writing code that is both scalable and maintainable.
+        </p>
+        <p className="text-lg mb-4">
+          Over the years, I’ve worked on a variety of personal and freelance projects that challenged me to solve real problems — from landing pages to full dashboard apps with authentication and API integration.
+        </p>
+        <p className="text-lg">
+          I'm currently open to <strong>remote or on-site opportunities</strong>, and I’m excited to contribute to teams that value <strong>creativity</strong>, <strong>collaboration</strong>, and <strong>high-quality code</strong>.
+        </p>
+        </div>
           </Animate>
 
           <Animate
@@ -110,10 +130,13 @@ const About = (headerTest) => {
                 <DiApple size={60} color="var(--yellow-theme-main-color)" />
               </div>
             </div>
+        
           </div>
         </Animate>
       </div>
-    </section>
+      </section>
+      </>
+    
   );
 };
 

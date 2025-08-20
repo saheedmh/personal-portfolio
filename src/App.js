@@ -5,8 +5,8 @@ import Resume from './resume'
 import Skill from './skill';
 import About from './about';
 //import Nav from './navbar2';
-import Portfolio from './portfolio';
-
+import Portfolio from './PortFolios';
+import Hero from './Hero';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -57,7 +57,8 @@ const  App =() => {
  
 
 <Navbars/>
-<Home/>
+{/**<Home/>**/}
+<Hero/>
 <Resume/>
 <Skill/>
 {<About/>}
